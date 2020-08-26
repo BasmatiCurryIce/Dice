@@ -16,7 +16,7 @@ function randomnum(dice) {
     num = Math.floor(Math.random() * 6) + 1;
     numbers.push(num);
   }
-  alert(numbers);
+ 
   displaydice(numbers);
   return numbers;
 }
