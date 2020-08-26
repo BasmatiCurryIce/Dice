@@ -16,7 +16,7 @@ function randomnum(dice) {
     num = Math.floor(Math.random() * 6) + 1;
     numbers.push(num);
   }
- 
+  //   alert(numbers);
   displaydice(numbers);
   return numbers;
 }
@@ -26,6 +26,9 @@ function displaydice(numbers) {
     var imgnum = document.createElement("img");
     imgnum.src = "./images/dice" + numbers[i] + ".png";
     document.getElementById("pics").appendChild(imgnum);
+    var images = document.getElementsByTagName("img");
+
+    images[i].className += "imgclass"; //Adding a imgclass
   }
   count++;
 }
